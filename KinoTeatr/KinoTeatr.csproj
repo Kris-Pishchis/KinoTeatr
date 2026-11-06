@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="12.0.2" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.0.2" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.0.2" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="12.0.2" />
+    <PackageReference Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.1">
+      <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+      <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KinoTeatrShared\KinoTeatrShared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\AboutGraphicPageWindow.axaml.cs">
+      <DependentUpon>AboutGraphicPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddNewGraphicPageWindow.axaml.cs">
+      <DependentUpon>AddNewGraphicPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddNewZatratPageWindow.axaml.cs">
+      <DependentUpon>AddNewZatratPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddNewProcatPageWindow.axaml.cs">
+      <DependentUpon>AddNewProcatPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddNewAreaPageWindow.axaml.cs">
+      <DependentUpon>AddNewAreaPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddStaffInGroupPageWindow.axaml.cs">
+      <DependentUpon>AddStaffInGroupPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AreaPageWindow.axaml.cs">
+      <DependentUpon>AreaPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ProcatPageWindow.axaml.cs">
+      <DependentUpon>ProcatPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\GraphicGroupPageWindow.axaml.cs">
+      <DependentUpon>GraphicGroupPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ZatratsPageWindow.axaml.cs">
+      <DependentUpon>ZatratsPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StaffInGroupPageWindow.axaml.cs">
+      <DependentUpon>StaffInGroupPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UpdateGroupPageWindow.axaml.cs">
+      <DependentUpon>UpdateGroupPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddNewGroupPageWindow.axaml.cs">
+      <DependentUpon>AddNewGroupPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\GroupsPageWindow.axaml.cs">
+      <DependentUpon>GroupsPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UpdateProjectPageWindow.axaml.cs">
+      <DependentUpon>UpdateProjectPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddNewProjectPageWindow.axaml.cs">
+      <DependentUpon>AddNewProjectPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AboutProjectPageWindow.axaml.cs">
+      <DependentUpon>AboutProjectPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ProjectPageWindow.axaml.cs">
+      <DependentUpon>ProjectPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UpdateStaffPageWindow.axaml.cs">
+      <DependentUpon>UpdateStaffPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddNewStaffPageWindow.axaml.cs">
+      <DependentUpon>AddNewStaffPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StaffPageWindow.axaml.cs">
+      <DependentUpon>StaffPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\PrimaryPageWindow.axaml.cs">
+      <DependentUpon>PrimaryPageWindow.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StartPageWindow.axaml.cs">
+      <DependentUpon>StartPageWindow.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
